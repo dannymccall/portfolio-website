@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { useContactUsForm } from "../hooks/useContactUs";
 import ContactMeFormTemplate from "./ContactMeFormTemplate";
+import { MdPhone, MdSend } from "react-icons/md";
 
 interface ContactMeDrawerrProps {
   //   project: Project;
@@ -52,7 +53,9 @@ export default function ContactMeDrawer({ onClose }: ContactMeDrawerrProps) {
         variants={drawerVariants}
         transition={{ type: "spring", stiffness: 300, damping: 30 }}
       >
-        <div className="absolute top-2 left-1/2 transform -translate-x-1/2 bg-[#111935] px-4 py-2 w-fit rounded-md shadow-lg flex items-center justify-between">
+        <div className="absolute top-2 left-1/2 transform -translate-x-1/2 bg-[#111935] px-4 py-2 w-fit rounded-md shadow-lg flex gap-2 items-center justify-between">
+                            <MdPhone />
+        
           <h2 className="text-white font-bold text-lg mr-2">Contact Me</h2>
           <button onClick={onClose} className="text-white text-lg cursor-pointer">
             ✕

@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import { useRouter } from "next/navigation";
-
+import { MdPhone } from "react-icons/md";
 const services = [
   {
     title: "Traditional Software Development",
@@ -82,6 +82,7 @@ export default function ServicesPage() {
           onClick={() => router.push("/contact")}
           className="mt-4 px-6 py-3 bg-amber-400 text-black rounded-lg hover:bg-amber-500 transition"
         >
+          <MdPhone className="inline-block mr-2" />
           Contact Me
         </button>
       </motion.section>

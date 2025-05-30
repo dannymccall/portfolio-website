@@ -24,9 +24,9 @@ const Navbar = () => {
         : "bg-[url('/headerbg.png')] bg-cover bg-center"
     }`}
     >
-      <h1 className="text-yellow-500  text-2xl font-bold font-sans z-50">
+      <Link href={"/"} className="text-yellow-500  text-2xl font-bold font-sans z-50">
         Portfolio
-      </h1>
+      </Link>
       <div className=" flex items-center gap-2">
         <NavbarLinks />
         <button className="cursor-pointer" onClick={openSidebar}>

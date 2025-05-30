@@ -16,8 +16,11 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Palmer Json | Full-Stack Developer • Crafting Web Solutions",
-  description:
-    "A Portfolio Website",
+  description: "A Portfolio Website",
+  icons:{
+    icon: "/palmer.ico",
+    apple: "/apple-touch-icon.png",
+  }
 };
 
 export default function RootLayout({
@@ -28,7 +31,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/palmer.ico" sizes="32x32" type="image/x-icon" />
+        <link rel="icon" href="/palmer.ico" sizes="32x32" />
+        <link
+          rel="icon"
+          href="/apple-touch-icon.png"
+          type="image/png"
+          sizes="180x180"
+        />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-slate-100`}

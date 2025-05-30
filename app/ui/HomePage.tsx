@@ -11,6 +11,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import ContactMeDrawer from "../components/ContactMeDrawer";
 import { handleDownload } from "../lib/helperFunction";
 import { useRouter } from "next/navigation";
+import { MdPhone, MdDownload } from "react-icons/md";
 const skills = [
   { name: "React", level: 85 },
   { name: "Next.js", level: 80 },
@@ -56,15 +57,18 @@ export default function Home() {
               >
                 <div className="flex flex-col md:flex-row gap-3">
                   <button
-                    className="bg-amber-500 cursor-pointer hover:text-slate-100 rounded-full text-base lg:text-xl text-slate-800 px-5 py-2 hover:bg-amber-900 font-semibold transition-all ease-in-out duration-300"
+                    className="bg-amber-500 text-center  cursor-pointer hover:text-slate-100 rounded-full text-base lg:text-xl text-slate-800 px-5 py-2 hover:bg-amber-900 font-semibold transition-all ease-in-out duration-300"
                     onClick={handleDownload}
                   >
+                                        <MdDownload className="inline-block mr-3" />
+
                     Download Portfolio
                   </button>
                   <button
-                    className="border-amber-500 cursor-pointer border-2 text-base lg:text-xl  rounded-full text-slate-100 px-5 py-2 hover:bg-amber-900 font-semibold transition-all ease-in-out duration-300"
+                    className="border-amber-500 text-center  cursor-pointer border-2 text-base lg:text-xl  rounded-full text-slate-100 px-5 py-2 hover:bg-amber-900 font-semibold transition-all ease-in-out duration-300"
                     onClick={() => router.push("/contact-me")}
                   >
+                    <MdPhone className="inline-block mr-3"/>
                     Contact Me
                   </button>
                 </div>

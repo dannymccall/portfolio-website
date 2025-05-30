@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 import { useContactUsForm } from "../hooks/useContactUs";
 import emailjs from "@emailjs/browser";
+import { MdSend } from "react-icons/md";
 
 const ContactMeFormTemplate = () => {
   const { register, handleSubmit, reset, errors } = useContactUsForm();
@@ -31,7 +32,7 @@ const ContactMeFormTemplate = () => {
       onSubmit={handleSubmit(onSubmit)}
       className="w-full overflow-y-auto mt-7"
     >
-      <div className="space-y-3 space-x-3">
+      <div className="space-y-3 mb- px-3">
         <label className="block text-gray-700 font-medium">Your Name</label>
         <input
           {...register("name")}
@@ -43,7 +44,7 @@ const ContactMeFormTemplate = () => {
           <p className="text-red-500 text-sm">{errors.name.message}</p>
         )}
       </div>
-      <div className="space-y-3">
+      <div className="space-y-3 mb-5 px-3">
         <label className="block text-gray-700  font-medium">Your Email</label>
         <input
           {...register("email")}
@@ -56,7 +57,7 @@ const ContactMeFormTemplate = () => {
         )}
       </div>
 
-      <div className="space-y-3">
+      <div className="space-y-3 mb-5 px-3">
         <label className="block text-gray-700 font-medium">Your Message</label>
         <textarea
           {...register("message")}
@@ -71,8 +72,9 @@ const ContactMeFormTemplate = () => {
 
       <button
         type="submit"
-        className="w-full bg-[#111935] my-5 text-white font-medium py-2 rounded-lg hover:bg-blue-700 transition cursor-pointer duration-300"
+        className="w-full bg-[#111935] flex items-center  justify-center my-5 text-white font-medium py-2 rounded-lg hover:bg-blue-700 transition cursor-pointer duration-300"
       >
+        <MdSend className="mx-3"/>
         Send Message
       </button>
       {status === "success" && (
