@@ -107,7 +107,7 @@ export default function Home() {
       >
         <section className="p-10 text-center bg-gold text-black w-full items-center justify-center flex flex-col">
           <h2 className="text-xl md:text-2xl lg:text-3xl font-semibold">Ready to Work with Us?</h2>
-          <p className="mt-4">
+          <p className="mt-4 text-sm md:text-base text-gray-700">
             Book an appointment today and take your business to the next level.
           </p>
           <button
