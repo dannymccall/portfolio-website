@@ -39,7 +39,7 @@ export default function Home() {
             <div className="flex flex-col gap-10">
               <div>
               <h1 className="font-sans text-amber-300 text-xl lg:text-3xl">
-                Hi there, I am 👋
+                Hi there 👋, I am
               </h1>
               <p className="font-sans text-slate-100 text-base lg:text-2xl">
                 Daniel Palmer
