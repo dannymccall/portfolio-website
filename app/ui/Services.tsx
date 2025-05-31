@@ -79,7 +79,7 @@ export default function ServicesPage() {
           I'm available for freelance, contracts, or full-time roles. Let’s build together.
         </p>
         <button
-          onClick={() => router.push("/contact")}
+          onClick={() => router.push("/contact-me")}
           className="mt-4 px-6 py-3 bg-amber-400 text-black rounded-lg hover:bg-amber-500 transition"
         >
           <MdPhone className="inline-block mr-2" />
