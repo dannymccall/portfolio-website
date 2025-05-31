@@ -106,12 +106,12 @@ export default function Home() {
         transition={{ duration: 1, ease: "easeOut" }}
       >
         <section className="p-10 text-center bg-gold text-black w-full items-center justify-center flex flex-col">
-          <h2 className="text-3xl font-semibold">Ready to Work with Us?</h2>
+          <h2 className="text-xl md:text-2xl lg:text-3xl font-semibold">Ready to Work with Us?</h2>
           <p className="mt-4">
             Book an appointment today and take your business to the next level.
           </p>
           <button
-            className="mt-4 px-6 py-3 bg-black text-amber-400 rounded-lg animate-pulse cursor-pointer"
+            className="mt-4 px-6 py-3 text-sm md:text-base bg-black text-amber-400 rounded-lg animate-pulse cursor-pointer"
             onClick={() => setDrawer((prev) => !prev)}
           >
             Book Now
