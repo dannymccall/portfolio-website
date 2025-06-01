@@ -64,20 +64,16 @@ export const projects = [
   },
   {
     title: "Microfinance App Socket.io",
-    description: "Modern loan system with dashboards, payments, and analytics.",
-    tech: ["Next.js", "MongoDB", "Tailwind"],
+    description: "Developed a real-time microfinance management system using Node.js and Socket.io, enabling instant updates for loan repayments, client management, and notifications. The application supports multiple users with real-time data synchronization.",
+    tech: ["Node.js", "Express", "Socket.io"],
     features: [
-      "Loan Management",
-      "Payment Schedules",
+      "Real-Time Notifications with Socket.io",
+      "Loan Repayment Tracking",
       "Client Management",
-      "Real-Time Notifications",
-      "Report and Analytics",
-      "Admin Dashboard",
-      "Scalabilty",
+      "Scalability",
     ],
 
-    live: "https://example.com/microfinance",
-    github: "https://github.com/yourusername/microfinance-app",
+    github: "https://github.com/dannymccall/microfinance-websockets",
   },
   {
     title: "KidsBank",
