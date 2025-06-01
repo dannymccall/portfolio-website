@@ -59,7 +59,7 @@ export const projects = [
       "MongoDB Integration",
     ],
 
-    live: "https://example.com/microfinance",
+    live: "https://nft-marketplace-git-main-dannymccalls-projects.vercel.app/",
     github: "https://github.com/yourusername/microfinance-app",
   },
   {
@@ -72,7 +72,7 @@ export const projects = [
       "Client Management",
       "Scalability",
     ],
-
+    live:"",
     github: "https://github.com/dannymccall/microfinance-websockets",
   },
   {
