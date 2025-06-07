@@ -32,7 +32,7 @@ const ContactMeFormTemplate = () => {
       onSubmit={handleSubmit(onSubmit)}
       className="w-full overflow-y-auto mt-7"
     >
-      <div className="space-y-3 mb- px-3">
+      <div className="space-y-3 mb-5 px-3 w-full">
         <label className="block text-gray-700 font-medium">Your Name</label>
         <input
           {...register("name")}

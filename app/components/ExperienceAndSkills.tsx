@@ -61,7 +61,7 @@ const ExperienceAndSkills = () => {
               'Worked in the IT Service Management Team, I help employees with technical issues',
             },
             {
-              title: 'Full Stack Developer',
+              title: 'Full Stack & Blockchain Engineer',
               company: 'Freelance · May 2022 - Present',
               description:
                 'Delivered client projects end-to-end using Node.js, MongoDB, and Next.js. Automated workflows and boosted performance.',

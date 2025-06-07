@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import PortfolioImage from "@/public/myportfolio.png";
+// import PortfolioImage from "@/public/";
 import Image from "next/image";
 import ExperienceAndSkills from "../components/ExperienceAndSkills";
 import TypewriterComponent from "../components/Typewriter";
@@ -37,17 +37,16 @@ export default function Home() {
             transition={{ duration: 1, ease: "easeOut" }}
           >
             <div className="flex flex-col gap-10">
-              <div>
-              <h1 className="font-sans text-amber-300 text-xl lg:text-3xl">
-                Hi there 👋, I am
-              </h1>
-              <p className="font-sans text-slate-100 text-base lg:text-2xl">
-                Daniel Palmer
-              </p>
-              <p className="font-sans text-slate-100 text-base lg:text-2xl">
-                Software Engineer
-              </p>
-
+              <div className="flex flex-col gap-2">
+                <h1 className="font-mono text-amber-300 text-xl lg:text-3xl">
+                  Hi there 👋, I am
+                </h1>
+                <p className="font-mono text-slate-100 text-base lg:text-2xl">
+                  Daniel Palmer
+                </p>
+                <p className="font-mono text-slate-100 text-base lg:text-2xl">
+                  Full-Stack & Blockchain Engineer
+                </p>
               </div>
               <motion.section
                 className=" flex flex-col gap-3 justify-center text-2xl text-gray-500 font-semibold"
@@ -60,15 +59,14 @@ export default function Home() {
                     className="bg-amber-500 text-center  cursor-pointer hover:text-slate-100 rounded-full text-base lg:text-xl text-slate-800 px-5 py-2 hover:bg-amber-900 font-semibold transition-all ease-in-out duration-300"
                     onClick={handleDownload}
                   >
-                                        <MdDownload className="inline-block mr-3" />
-
+                    <MdDownload className="inline-block mr-3" />
                     Download Portfolio
                   </button>
                   <button
                     className="border-amber-500 text-center  cursor-pointer border-2 text-base lg:text-xl  rounded-full text-slate-100 px-5 py-2 hover:bg-amber-900 font-semibold transition-all ease-in-out duration-300"
                     onClick={() => router.push("/contact-me")}
                   >
-                    <MdPhone className="inline-block mr-3"/>
+                    <MdPhone className="inline-block mr-3" />
                     Contact Me
                   </button>
                 </div>
@@ -84,9 +82,11 @@ export default function Home() {
             transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
           >
             <Image
-              src={PortfolioImage}
+              src={"/myportfolio.png"}
               alt="Tech"
               className="relative w-full h-full object-cover"
+              width={300}
+              height={300}
             />
           </motion.div>
         </div>
@@ -106,7 +106,9 @@ export default function Home() {
         transition={{ duration: 1, ease: "easeOut" }}
       >
         <section className="p-10 text-center bg-gold text-black w-full items-center justify-center flex flex-col">
-          <h2 className="text-xl md:text-2xl lg:text-3xl font-semibold">Ready to Work with Us?</h2>
+          <h2 className="text-xl md:text-2xl lg:text-3xl font-semibold">
+            Ready to Work with Us?
+          </h2>
           <p className="mt-4 text-sm md:text-base text-gray-700">
             Book an appointment today and take your business to the next level.
           </p>
