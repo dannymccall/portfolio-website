@@ -57,7 +57,7 @@ export default function AboutMe() {
         <ul className="space-y-4 text-gray-800">
           <li>📌 <strong>2022:</strong> Graduated with BSc in Computer Science</li>
           <li>📌 <strong>2022:</strong> Worked as a Backend Developer</li>
-          <li>📌 <strong>2023:</strong> Started freelancing as a Software Engineer</li>
+          <li>📌 <strong>2023:</strong> Started freelancing as a Full-Stack & Blockchain Engineer</li>
           {/* <li>📌 <strong>2024:</strong> Launched a Microfinance SaaS solution</li> */}
         </ul>
       </motion.section>
