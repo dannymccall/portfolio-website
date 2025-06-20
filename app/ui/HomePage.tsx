@@ -12,6 +12,8 @@ import ContactMeDrawer from "../components/ContactMeDrawer";
 import { handleDownload } from "../lib/helperFunction";
 import { useRouter } from "next/navigation";
 import { MdPhone, MdDownload } from "react-icons/md";
+import ServicesPreview from "../components/ServicesPreview";
+import Testimonials from "../components/Testimonials";
 const skills = [
   { name: "React", level: 85 },
   { name: "Next.js", level: 80 },
@@ -95,9 +97,10 @@ export default function Home() {
       {/* Mission Section */}
       <Encouragements />
       <ExperienceAndSkills />
+      <ServicesPreview />
       <WhatIdo />
       <Projects />
-
+      <Testimonials /> 
       {/* Call to Action */}
       <motion.div
         className="md:w-1/2 w-full flex flex-col gap-3 justify-center items-center text-center text-2xl m-auto text-gray-500 font-semibold"
